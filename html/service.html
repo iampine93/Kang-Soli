@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Web Portfolio</title>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/974a15f93a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+
+    <!-- animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../css/sub.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="container clearfix">
+          <h1 class="logo-w">
+            <a href="main.html">SOL.</a>
+          </h1>
+          <nav class="gnb-w">
+            <ul>
+              <li><a href="main.html">Works</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="mainview" class="service"></section>
+
+      <section id="contents">
+        <div class="container">
+          <div class="title">
+            <h3>Service</h3>
+            <p>
+              교육 과정을 수료하는 동안 아래와 같은 작업들을 경험해보았으며, 이
+              경험들을 실무에서도 잘 보여드릴 수 있습니다.
+            </p>
+          </div>
+          <div class="ser clearfix">
+            <div class="sec1 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+              <div class="textbox">
+                <h5>App Design</h5>
+                <p>
+                  사용자 경험을 기반으로 모바일 UI/UX 디자인 및 프로토타입
+                  제작과 최신 트렌드에 맞는 앱 디자인 제작이 가능합니다
+                </p>
+              </div>
+            </div>
+            <div class="sec1 wow fadeInUp" data-wow-delay="1s">
+              <div class="icon"><i class="fas fa-tv"></i></div>
+              <div class="textbox">
+                <h5>Web Design</h5>
+                <p>
+                  Grid System을 바탕으로 XD를 활용하여 웹 사이트 디자인 및
+                  프로토타입 제작이 가능하며 웹 사이트의 목적과 컨셉, 사용자의
+                  니즈에 맞는 디자인을 할 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="sec1 wow fadeInUp" data-wow-delay="1.5s">
+              <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="textbox">
+                <h5>Web Publishing</h5>
+                <p>
+                  HTML5와 CSS3 이용하며 퍼블리싱의 기본기와 활용능력을 갖추고
+                  있고, 상호작용에 필요한 JAVASCRIPT와 JQUERY를 활용하여 웹
+                  페이지의 동적 구현이 가능합니다.
+                </p>
+              </div>
+            </div>
+            <div class="sec2 wow fadeInUp" data-wow-delay="2s">
+              <div class="icon">
+                <i class="fa-regular fa-object-group"></i>
+              </div>
+              <div class="textbox">
+                <h5>RWD( Responsive Web Design )</h5>
+                <p>
+                  Bootstrap과 CSS 프레임워크의 이해를 기반으로 이를 적용 및
+                  활용하여 기기별 적절한 레이아웃을 구성하여 반응형 웹 사이트를
+                  제작할 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="sec2 wow fadeInUp" data-wow-delay="2.5s">
+              <div class="icon"><i class="fa-brands fa-sass"></i></div>
+              <div class="textbox">
+                <h5>SASS</h5>
+                <p>
+                  컴포넌트화 되고 유지보수에 최적화된 코딩을 하기 위해 SASS와
+                  SCSS를 활용할 수 있습니다.
+                </p>
+              </div>
+            </div>
+            <div class="sec2 wow fadeInUp" data-wow-delay="3s">
+              <div class="icon">
+                <i class="fas fa-code-branch"></i>
+              </div>
+              <div class="textbox">
+                <h5>APP Develope</h5>
+                <p>
+                  Vue & PWA 를 기반으로 하여 웹앱을 개발한 경험으로 디자인부터
+                  컴포넌트 마크업, 스타일링까지 퍼블리싱 할 수 있습니다.
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <a href="#">
+            <img src="../images/main/f-logo.png" alt="footer logo" />
+          </a>
+          <p>|<span>Copy All Right Reserved</span></p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <!-- Wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- MY JS -->
+    <script>
+      $(function(){
+      
+        new WOW().init();
+
+      });
+    </script>
+  </body>
+</html>

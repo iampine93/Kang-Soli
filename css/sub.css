@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap {
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+footer {
+  height: 210px;
+}
+/* ******************* 공통영역 선언시작 **************** */
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 41px 0;
+}
+
+nav {
+  float: left;
+}
+
+h3 {
+  height: 42px;
+  font: 700 3.6rem/45px "Libre Baskerville", sans-serif;
+  margin-bottom: 42px;
+  color: #414145;
+}
+
+.title h5 {
+  font: 700 1.8rem/42px "Libre Baskerville", sans-serif;
+  letter-spacing: 2px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer a {
+  margin-right: 34px;
+}
+
+footer span {
+  margin-left: 34px;
+  font: 400 1.4rem/21px "Poppins", sans-serif;
+}
+
+footer img {
+  width: 38px;
+  height: 14px;
+}
+
+/* ******************* 개별영역 선언시작 **************** */
+
+/* **************** ABOUT ************* */
+
+/* header */
+.logo-w {
+  float: left;
+}
+
+.logo-w a {
+  width: 83px;
+  height: 42px;
+  background: url(../images/sub/logo-white.png) no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  text-indent: -9999px;
+  margin-right: 117px;
+}
+
+.gnb-w li {
+  float: left;
+}
+
+.gnb-w li a {
+  display: block;
+  font: 400 1.5rem/42px "poppins", sans-serif;
+  color: #fff;
+  margin-right: 30px;
+  position: relative;
+}
+
+.gnb-w li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.gnb-w li a:hover {
+  font-weight: 700;
+}
+
+.gnb-w li a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+/* mainview */
+#mainview {
+  width: 100%;
+  height: 504px;
+}
+
+.about {
+  background: url(../images/sub/about-main.png) no-repeat fixed 50% 100%;
+  background-size: cover;
+}
+
+/* contents */
+#contents {
+  padding: 84px 0;
+}
+
+/* contents-iam */
+.iam {
+  margin-bottom: 84px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iam .leftbox {
+  width: 450px;
+}
+
+.iam .leftbox p {
+  font: 300 1.4rem/21px "NanumSquare", sans-serif;
+}
+
+.iam .leftbox span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 3px;
+}
+
+.iam .rightbox {
+  width: 600px;
+}
+
+.iam .rightbox p:first-child {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.iam .rightbox p {
+  margin-bottom: 21px;
+  font: 400 1.4rem/21px "NanumSquare", sans-serif;
+}
+
+/* contents-box */
+
+.box {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contents-resume */
+
+.resume {
+  width: 60%;
+  margin-right: 30px;
+}
+
+.resume ul li {
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+.resume .date {
+  float: left;
+  font: 700 1.4rem/42px "NanumSquare", sans-serif;
+  margin-right: 10px;
+}
+.resume .text {
+  float: left;
+  font: 300 1.4rem/42px "NanumSquare", sans-serif;
+}
+.resume .text span {
+  font-weight: 400;
+}
+
+/* contents-skill */
+.skill {
+  width: 50%;
+}
+
+.skill li {
+  width: 45%;
+  height: 63px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 21px;
+}
+
+.skill h4 {
+  height: 42px;
+  font: 400 1.6rem/42px "Poppins", sans-serif;
+  position: relative;
+}
+
+.skill h4 span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+
+.skill .progress {
+  height: 21px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 0 6px #ddd;
+}
+
+.skill .progress .determinate {
+  height: 21px;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+/* **************** SERVICE ************* */
+
+/* mainview */
+
+.service {
+  background: url(../images/sub/ser-mainview.png) no-repeat fixed 50% 100%;
+  background-size: cover;
+}
+
+/* contents*/
+
+#contents .title h3 {
+  margin-bottom: 21px !important;
+}
+
+#contents .title p {
+  font: 400 1.2rem/21px "NanumSquare", sans-serif;
+}
+
+#contents .ser {
+  padding-top: 63px;
+}
+
+#contents .ser > div {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: calc(100% / 3);
+  height: 200px;
+  padding: 0 30px 0 0;
+  color: #414145;
+}
+
+#contents .ser .sec1 {
+  margin-bottom: 20px;
+}
+
+#contents .ser > div .icon {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+  line-height: 45px;
+  margin-right: 20px;
+  text-align: left;
+  font-size: 2.3rem;
+  color: #414145;
+}
+
+#contents .ser > div h5 {
+  font: 500 1.8rem/42px "Poppins", sans-serif;
+}
+
+#contents .ser > div p {
+  font: 300 1.4rem/21px "NanumSquare", sans-serif;
+}
+
+/* **************** CONTACT ************* */
+
+/* header */
+.logo {
+  float: left;
+}
+
+.logo a {
+  width: 83px;
+  height: 42px;
+  background: url(../images/main/logo.png) no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  text-indent: -9999px;
+  margin-right: 117px;
+}
+
+.gnb li {
+  float: left;
+}
+
+.gnb li a {
+  display: block;
+  font: 400 1.5rem/42px "poppins", sans-serif;
+  color: #414145;
+  margin-right: 30px;
+  position: relative;
+}
+
+.gnb li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #414145;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.gnb li a:hover {
+  font-weight: 700;
+}
+
+.gnb li a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+/* map */
+.map {
+  padding: 124px 0 84px;
+}
+
+/* contents */
+#contetns-box {
+  padding-bottom: 84px;
+}
+
+#contetns-box .container {
+  display: flex;
+  justify-content: space-around;
+}
+#contact {
+  width: 370px;
+}
+#contact .title .en {
+  font: 300 1.4rem/21px "Poppins", sans-serif;
+}
+
+#contact .title p:last-child {
+  font: 700 1.4rem/21px "NanumSquare", sans-serif;
+  margin-bottom: 42px;
+}
+
+#contact ul li {
+  margin-bottom: 21px;
+  font: 300 1.4rem/21px "Poppins", sans-serif;
+}
+
+#contact ul li:last-child {
+  margin-bottom: 0;
+}
+
+#contact ul li span {
+  display: block;
+  font: 700 1.4rem/1.2 "Libre Baskerville", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .f-box {
+  margin-bottom: 21px;
+}
+
+form input {
+  height: 42px;
+}
+
+form input,
+form textarea {
+  width: 470px;
+  border: transparent;
+  border-bottom: 1.5px solid #666;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font: 400 1.4rem/21px "Poppins", sans-serif;
+}
+
+#getintouch #i_submit {
+  width: 101px;
+  height: 42px;
+  font: 400 1.6rem/42px "Poppins", sans-serif;
+  border: 1px solid #666;
+  cursor: pointer;
+  background-color: #fff;
+}

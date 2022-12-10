@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Web Portfolio</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../css/sub.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="container clearfix">
+          <h1 class="logo">
+            <a href="main.html">SOL.</a>
+          </h1>
+          <nav class="gnb">
+            <ul>
+              <li><a href="main.html">Works</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.8719826382558!2d126.82865545079106!3d37.32185997974561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f05d1029393%3A0x6dec17883757798f!2z7JWI7IKw7Iuc7LKt!5e0!3m2!1sko!2skr!4v1663241225439!5m2!1sko!2skr"
+          width="100%"
+          height="390"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </main>
+      <section id="contetns-box">
+        <div class="container">
+          <div id="contact">
+            <div class="title">
+              <h5>CONTACT</h5>
+              <p class="en">Thank You For Watching My Porfolio!</p>
+              <p>메세지 남겨주시면 평일 기준 3일 이내로 답장 드리겠습니다.</p>
+            </div>
+            <ul>
+              <li><span>Email</span>soli223@naver.com</li>
+              <li><span>Call</span>010 3069 1360</li>
+              <li><span>Address</span>경기도 안산시</li>
+            </ul>
+          </div>
+
+          <div id="getintouch">
+            <div class="title">
+              <h5>Get In touch</h5>
+            </div>
+            <form action="" method="post">
+              <div class="f-box">
+                <label for="i_name"></label>
+                <input type="text" name="name" id="i_name" placeholder="Name" />
+              </div>
+              <div class="f-box">
+                <label for="i_mail"></label>
+                <input
+                  type="mail"
+                  name="email"
+                  id="i_mail"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="f-box">
+                <label for="i_msg"></label>
+                <textarea
+                  name="message"
+                  id="i_msg"
+                  cols="10"
+                  rows="5"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+
+              <p><input type="submit" value="Send" id="i_submit" /></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <a href="#">
+            <img src="../images/main/f-logo.png" alt="footer logo" />
+          </a>
+          <p>|<span>Copy All Right Reserved</span></p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

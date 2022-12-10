@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap {
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+#mainview {
+  height: 100vh;
+}
+
+footer {
+  height: 210px;
+}
+/* ******************* 공통영역 선언시작 **************** */
+
+/* ******************* 개별영역 선언시작 **************** */
+
+/* HEADER */
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 41px 0;
+  z-index: 9999;
+}
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  width: 83px;
+  height: 42px;
+  background: url(../images/main/logo.png) no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  text-indent: -9999px;
+  margin-right: 117px;
+}
+
+nav {
+  float: left;
+}
+
+.gnb li {
+  float: left;
+}
+
+.gnb li a {
+  display: block;
+  font: 400 1.5rem/42px "poppins", sans-serif;
+  color: #313139;
+  margin-right: 30px;
+  position: relative;
+}
+.gnb li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #313139;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.gnb li a:hover {
+  font-weight: 700;
+}
+
+.gnb li a:hover::after {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+/* MAINVIEW */
+#mainview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#mainview .mask {
+  display: inline-block;
+  background-attachment: fixed;
+  font: 800 15rem/1 "Libre Baskerville", sans-serif;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(../images/main/woman.jpg);
+  background-size: cover;
+  background-position: 14%;
+  background-repeat: no-repeat;
+}
+
+#mainview p {
+  padding: 21px 0;
+  font: 400 1.4rem/1.5 "Nanum Gothic", sans-serif;
+}
+
+#mainview span {
+  display: block;
+}
+
+/* WORKS */
+#works {
+  padding: 63px 0 84px;
+}
+
+/* work-gnb */
+
+#works .gnb2 {
+  padding: 0 0 63px;
+  text-align: center;
+}
+
+#works .gnb2 li {
+  display: inline-block;
+  height: 42px;
+  margin-right: 40px;
+}
+
+#works .gnb2 li a {
+  font: 400 1.6rem/42px "Poppins", sans-serif;
+  color: #414145;
+  position: relative;
+  display: block;
+}
+
+#works .gnb2 li a:hover {
+  font-weight: 700;
+}
+
+#works .gnb2 li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #414145;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+#works .gnb2 li a:hover::after {
+  opacity: 1;
+}
+
+/* works - gallery */
+
+.grid .grid-item {
+  width: 31.3%;
+  margin: 0 1% 21px;
+  position: relative;
+}
+.grid .grid-item:nth-child(3n) {
+  margin: 0;
+}
+
+.grid .grid-item img {
+  width: 100%;
+}
+
+.grid .grid-item .caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  color: #414145;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.grid .grid-item .caption h4 {
+  position: absolute;
+  left: 30px;
+  font: 300 1.6rem/21px "Poppins", sans-serif;
+}
+
+.grid .grid-item .caption h4 a {
+  display: block;
+  margin-top: 10px;
+  color: #414145;
+  font: 700 3rem/42px "Libre Baskerville", sans-serif;
+}
+
+.grid .grid-item:hover .caption {
+  opacity: 1;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  margin-right: 34px;
+}
+
+footer span {
+  margin-left: 34px;
+  font: 400 1.4rem/21px "Poppins", sans-serif;
+}
+
+footer img {
+  width: 38px;
+  height: 14px;
+}
